@@ -6,11 +6,14 @@
   "dependencies": {
     "apollo-server": "^3.12.0",
     "axios": "^1.4.0",
-    "graphql": "^16.8.0"
+    "graphql": "^16.8.0",
+    "graphql-request": "^6.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node index.js",
+    "test": "node frontend/src/App.js",
     "start": "node index.js"
   },
   "repository": {

@@ -47,13 +47,13 @@ const resolvers = {
         });
       //  console.log("contents_url", response);
       //  https://api.github.com/repos/Ajinkyadon/repoA/contents/{+path}
-        const ymlFileContentResponse = await axios.get(`https://api.github.com/repos/${repoName}/contents/`, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+      //   const ymlFileContentResponse = await axios.get(`https://api.github.com/repos/${repoName}/contents/`, {
+      //     headers: {
+      //       Authorization: `Bearer ${token}`,
+      //     },
+      //   });
 
-       const ymlContent = ymlFileContentResponse.data[0]?.content || '';
+      //  const ymlContent = ymlFileContentResponse.data[0]?.content || '';
 
         // You can fetch and calculate other details like isPrivate, numFiles, activeWebhooks here
 
@@ -63,7 +63,7 @@ const resolvers = {
           owner: response.data.owner.login,
           isPrivate: response.data.private,
           numFiles: response.data.size, // Replace with actual numFiles logic
-         ymlContent: Buffer.from(ymlContent, 'base64').toString('utf-8'),
+       //  ymlContent: Buffer.from(ymlContent, 'base64').toString('utf-8'),
           activeWebhooks: 0, // Replace with actual activeWebhooks logic
         };
       } catch (error) {
