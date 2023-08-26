@@ -1,0 +1,25 @@
+{
+  "name": "apollo-graphql-server",
+  "version": "1.0.0",
+  "description": "just for sample interview",
+  "main": "index.js",
+  "dependencies": {
+    "apollo-server": "^3.12.0",
+    "axios": "^1.4.0",
+    "graphql": "^16.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "apollo-graphql"
+  },
+  "keywords": [
+    "graphql"
+  ],
+  "author": "Ajinkya Dondalkar",
+  "license": "MIT"
+}
